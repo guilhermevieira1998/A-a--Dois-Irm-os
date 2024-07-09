@@ -1,0 +1,38 @@
+@media (min-width: 768px) {
+    .menu-item {
+        width: calc(50% - 40px);
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menu-item {
+        flex-direction: row;
+        max-width: 600px;
+        align-items: flex-start;
+    }
+
+    .menu-item img {
+        width: 150px;
+        height: 150px;
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .item-details {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .item-details h2 {
+        font-size: 1.8em;
+    }
+
+    .item-details p {
+        font-size: 1.5em;
+    }
+
+    button {
+        width: auto;
+    }
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Açaí Dois Irmãos</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h1>Açaí Dois Irmãos</h1>
+    <hr>
+    <div class="menu">
+        <div class="menu-item">
+            <img src="./assets/acai-1.jpg" alt="Açaí 220ml">
+            <div class="item-details">
+                <h2>Açaí 220ml</h2>
+                <p>R$ 7,00</p>
+                <p>Caldas: Chocolate e Morango</p>
+                <p>Adicionais: Sucrilho, Granulado, Leite Condensado, Biscoitinho, Granola</p>
+                <p>Frutas: Banana, Uva, Manga, Morango, Abacaxi </p>
+                <button onclick="addItem('Açaí 220ml', 7)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes"onchange="updateNotes(0, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="./assets/acai-1.jpg" alt="Açaí 300ml">
+            <div class="item-details">
+                <h2>Açaí 300ml</h2>
+                <p>R$ 10,00</p>
+                <p>Caldas: Chocolate e Morango</p>
+                <p>Adicionais: Sucrilho, Granulado, Leite Condensado, Biscoitinho, Granola</p>
+                <p>Frutas: Banana, Uva, Manga, Morango, Abacaxi </p>
+                <button onclick="addItem('Açaí 300ml', 10)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes" onchange="updateNotes(1, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="./assets/acai-1.jpg" alt="Açaí 500ml">
+            <div class="item-details">
+                <h2>Açaí 500ml</h2>
+                <p>R$ 14,00</p>
+                <p>Caldas: Chocolate e Morango</p>
+                <p>Adicionais: Sucrilho, Granulado, Leite Condensado, Biscoitinho, Granola</p>
+                <p>Frutas: Banana, Uva, Manga, Morango, Abacaxi </p>
+                <button onclick="addItem('Açaí 500ml', 14)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes" onchange="updateNotes(1, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="./assets/acai-1.jpg" alt="Açaí 770ml">
+            <div class="item-details">
+                <h2>Açaí 770ml</h2>
+                <p>R$ 18,00</p>
+                <p>Caldas: Chocolate e Morango</p>
+                <p>Adicionais: Sucrilho, Granulado, Leite Condensado, Biscoitinho, Granola</p>
+                <p>Frutas: Banana, Uva, Manga, Morango, Abacaxi </p>
+                <button onclick="addItem('Açaí 770ml', 18)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes" onchange="updateNotes(1, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="./assets/acai-2.jpg" alt="Açaí Garrafa 300ml">
+            <div class="item-details">
+                <h2>Açaí Garrafa 300ml</h2>
+                <p>R$ 12,00</p>
+                <button onclick="addItem('Açaí Garrafa 300ml', 12)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes" onchange="updateNotes(1, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-item">
+            <img src="./assets/acai-2.jpg" alt="Açaí Garrafa 500ml">
+            <div class="item-details">
+                <h2>Açaí Garrafa 500ml</h2>
+                <p>R$ 16,00</p>
+                <button onclick="addItem('Açaí Garrafa 500ml', 16)">Adicionar ao Carrinho</button>
+                <div class="order-notes-section" style="display: none;">
+                    <textarea class="item-notes" onchange="updateNotes(1, this.value)"></textarea>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <div id="cart">
+        <h2>Meu Carrinho</h2>
+        <ul id="cart-items"></ul>
+        <div id="order-notes-section" style="display: none;">
+            <button id="place-order" onclick="placeOrder()">Enviar Pedido</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
